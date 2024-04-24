@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-    <header>
+    <header class="card">
         <h1>Card de herói</h1>
-        <h3>Coloque os dados de seu herói</h3>
+        <p>Coloque os dados de seu herói</p>
     </header>
-    <div id="cardHero">
+    <div id="cardhero">
         <div id="esquerda">
             <img src="imgs/warrior.png" id="imageHero">
         </div>
@@ -26,7 +26,7 @@
             <form>
                 <label for="fnome">Nome do herói:</label><br>
                 <input type="text" id="fnome" name="fnome"><br>
-                <select name="classe" id="classe">
+                <select name="classe" id="classe" onchange="mudarImage()">
                     <option value="warrior">Guerreiro</option>
                     <option value="blackmage">Mago Negro</option>
                     <option value="redmage">Mago Vermelho</option>
@@ -34,8 +34,15 @@
                     <option value="fighter">Lutador</option>
                     <option value="knight">Cavaleiro</option>
                 </select>
-              </form> 
+                <br>
+                <label for="fexp">Experiência:</label><br>
+                <input type="number" id="fexp" name="fexp"><br>
+              </form>
+            <button onclick="calcularXp()">Calcular nível</button> 
+            <div><p id="resultado">Rank</p></div>
         </div>
     </div>
 </body>
+
+<script type="text/javascript" src="js/index.js"></script>
 </html>
