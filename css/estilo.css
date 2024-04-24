@@ -1,0 +1,20 @@
+*{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    background-color: #63cafc;
+}
+
+header {
+    background-color: rgba(64, 64, 256, 1); 
+}
+
+h1 {
+    font-family: "Pixelify Sans";
+    font-size: xxx-large;
+}
+
+#cardHero{
+    background-color: rgba(64, 64, 256, 1); 
+}
